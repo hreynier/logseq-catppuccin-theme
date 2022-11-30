@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Vollkorn&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --base: #1e1e2e;
+  --surface0: #313244;
+  --surface1: #45475a;
+  --mantle: #181825;
+  --crust: #11111b;
+  --foreground: #cdd6f4;
+  --overlay0: #6c7086;
+  --comment: #6272a4;
+  --white: var(--foreground);
+  --white-hover: #cdd6f480;
+  --rosewater: #f5e0dc;
+  --rosewater-hover: #f5e0dc80;
+  --red: #f38ba8;
+  --red-hover: #f38ba880;
+  --blue: #89b4fa;
+  --blue-hover: #89b4fa80;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --mauve: #cba6f7;
+  --mauve-hover: #cba6f780;
+  --sky: #89dceb;
+  --sky-hover: #89dceb80;
+  --sapphire: #74c7ec;
+  --pink: #f5c2e7;
+  --pink-hover: #f5c2e780;
+
+  --ls-tag-text-opacity: 0.8;
+  --ls-tag-text-hover-opacity: 0.8;
+  --ls-page-text-size: 16px;
+  --ls-page-title-size: 36px;
+  --ls-font-family: "Public Sans";
+  --ls-font-weight: 300;
+  --ls-font-letter-spacing: 0.002em;
+  --ls-font-line-height: 1.5;
+
+  --ls-border-radius-low: 3px;
+  --ls-border-radius-medium: 6px;
+}
+
+.dark-theme,
+html[data-theme="dark"] {
+  --ls-primary-background-color: var(--base);
+  --ls-secondary-background-color: var(--mantle);
+  --ls-tertiary-background-color: var(--surface0);
+  --ls-quaternary-background-color: var(--surface0);
+  --ls-quinary-background-color: var(--crust);
+
+  --ls-active-primary-color: var(--foreground);
+  --ls-active-secondary-color: var(--foreground);
+
+  --ls-primary-text-color: var(--foreground);
+  --ls-secondary-text-color: var(--white-hover);
+
+  --ls-search-background-color: var(--base);
+  --ls-border-color: var(--comment);
+  --ls-secondary-border-color: var(--ls-border-color);
+  --ls-menu-hover-color: var(--surface0);
+  --ls-table-tr-even-background-color: var(--surface0);
+
+  --ls-head-text-color: var(--foreground);
+  --ls-title-text-color: var(--foreground);
+
+  --ls-link-text-color: var(--mauve);
+  --ls-link-text-hover-color: var(--mauve-hover);
+
+  --ls-link-ref-text-color: var(--blue);
+  --ls-link-ref-text-hover-color: var(--blue-hover);
+  --ls-block-ref-link-text-color: var(--ls-border-color);
+
+  --ls-tag-text-color: var(--blue);
+  --ls-tag-text-hover-color: var(--blue-hover);
+
+  --ls-block-bullet-border-color: var(--overlay0);
+  --ls-block-bullet-color: var(--foreground);
+  --ls-block-highlight-color: var(--overlay0);
+  --ls-block-properties-background-color: var(--surface0);
+
+  --ls-page-checkbox-color: transparent;
+  --ls-page-checkbox-border-color: var(--comment);
+
+  --ls-page-blockquote-color: var(--foreground);
+  --ls-page-blockquote-bg-color: var(--surface0);
+  --ls-page-blockquote-border-color: var(--yellow);
+  --ls-page-properties-background-color: var(--surface0);
+
+  --ls-page-inline-code-color: var(--yellow);
+  --ls-page-inline-code-bg-color: var(--base);
+
+  --ls-scrollbar-background-color: var(--base);
+  --ls-scrollbar-foreground-color: var(--crust);
+  --ls-scrollbar-thumb-hover-color: var(--surface0);
+
+  --ls-icon-color: var(--white-hover);
+  --ls-search-icon-color: var(--white-hover);
+  --ls-a-chosen-bg: var(--surface0);
+  --ls-right-sidebar-code-bg-color: var(--surface0);
+  --ls-selection-background-color: var(--comment);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+  --ls-guideline-color: var(--ls-border-color);
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-primary-background-color);
+  --color-level-3: var(--ls-quaternary-background-color);
+  --color-level-4: var(--ls-tertiary-background-color);
+  --color-level-5: var(--ls-quinary-background-color);
+}
+
+html,
+body {
+  font-weight: var(--ls-font-weight);
+  letter-spacing: var(--ls-font-letter-spacing);
+  line-height: var(--ls-font-line-height);
+  font-size: var(--ls-page-text-size);
+  background-color: var(--base);
+}
+
+i {
+  color: var(--green);
+}
+
+b {
+  font-weight: 700;
+}
+
+mark {
+  background-color: var(--rosewater);
+}
+
+.bg-orange-400 {
+  background-color: var(--peach);
+}
+
+.bg-green-600 {
+  background-color: var(--green);
+}
+
+.bg-red-500 {
+  background-color: var(--red);
+}
+
+.dark-theme .form-checkbox {
+  border: 1px solid var(--ls-page-checkbox-border-color) !important;
+  border-radius: var(--ls-border-radius-low) !important;
+}
+
+.external-link {
+  color: var(--rosewater);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.external-link:hover {
+  color: var(--rosewater-hover);
+}
+
+h1.title,
+.ls-block h1,
+.ls-block h2,
+.ls-block h3,
+.ls-block h4,
+.ls-block h5,
+.ls-block h6 {
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+}
+
+/* Priority tag styling */
+.priority {
+  color: var(--ls-tag-text-color);
+  opacity: 1 !important;
+  font-size: 0px; /* Hide text */
+}
+
+.priority:hover,
+a.tooltip-priority:hover {
+  color: var(--ls-tag-text-hover-color);
+  opacity: 0.5;
+}
+
+a.priority[href="#/page/A"]:before {
+  content: "A";
+  background: var(--red);
+}
+
+a.priority[href="#/page/B"]:before {
+  content: "B";
+  background: var(--yellow);
+}
+
+a.priority[href="#/page/C"]:before {
+  content: "C";
+  background: var(--green);
+}
+
+a.priority:before {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 1px 4px 0px 3px;
+  margin: 0px 2px 0px 0px;
+  border-radius: var(--ls-border-radius-low);
+  color: var(--ls-primary-background-color);
+}
+
+a.tooltip-priority {
+  color: var(--ls-tag-text-color);
+}
+
+.Tooltip__label {
+  background: var(--ls-quinary-background-color);
+}
+
+.Tooltip__label::after {
+  border-bottom-color: var(--ls-quinary-background-color);
+}
+
+.page-reference .bracket {
+  color: var(--ls-border-color);
+  opacity: 0.8;
+}
+
+a.tag {
+  background: var(--mauve);
+  border-radius: 3px 3px 3px 3px;
+  padding: 0px 3px;
+  color: var(--mantle);
+  font-weight: 400;
+}
+
+a.tag:hover {
+  background: transparent;
+  color: (--mauve);
+}
+
+/*
+    Name:       Dracula for CodeMirror
+    Author:     Michael Kaminsky (http://github.com/mkaminsky11)
+    Adapted by:    Sly Bouhafs
+    Original dracula color scheme by Zeno Rocha (https://github.com/zenorocha/dracula-theme)
+    Adapted for logseq
+*/
+
+html[data-theme="dark"] .CodeMirror {
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.2;
+  background: var(--base);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  color: var(--white);
+  --ctp-rosewater: 245, 224, 220;
+  --ctp-flamingo: 242, 205, 205;
+  --ctp-pink: 245, 194, 231;
+  --ctp-mauve: 203, 166, 247;
+  --ctp-red: 243, 139, 168;
+  --ctp-maroon: 235, 160, 172;
+  --ctp-peach: 250, 179, 135;
+  --ctp-yellow: 249, 226, 175;
+  --ctp-green: 166, 227, 161;
+  --ctp-teal: 148, 226, 213;
+  --ctp-sky: 137, 220, 235;
+  --ctp-sapphire: 116, 199, 236;
+  --ctp-blue: 135, 176, 249;
+  --ctp-lavender: 180, 190, 254;
+  --ctp-text: 198, 208, 245;
+  --ctp-subtext1: 179, 188, 223;
+  --ctp-subtext0: 161, 168, 201;
+  --ctp-overlay2: 142, 149, 179;
+  --ctp-overlay1: 123, 129, 157;
+  --ctp-overlay0: 105, 109, 134;
+  --ctp-surface2: 86, 89, 112;
+  --ctp-surface1: 67, 70, 90;
+  --ctp-surface0: 49, 50, 68;
+  --ctp-base: 30, 30, 46;
+  --ctp-mantle: 24, 24, 37;
+  --ctp-crust: 17, 17, 27;
+  --bg0: rgb(var(--ctp-base));
+  --bg1: rgb(var(--ctp-overlay1));
+  --bg4: rgb(var(--ctp-overlay0));
+  --fg: rgb(var(--ctp-text));
+  --fg3: rgb(var(--ctp-subtext0));
+  --gray: rgb(var(--ctp-subtext1));
+  --blue: rgb(var(--ctp-blue));
+  --yellow: rgb(var(--ctp-yellow));
+  --aqua: rgb(var(--ctp-blue));
+  --orange: rgb(var(--ctp-peach));
+  --current-line: rgb(var(--ctp-surface0));
+  --selection: rgb(var(--ctp-surface2));
+  --atom: rgb(var(--ctp-lavender));
+  --cursor: rgb(var(--ctp-overlay1));
+  --keyword: rgb(var(--ctp-red));
+  --operator: rgb(var(--ctp-sky));
+  --number: rgb(var(--ctp-peach));
+  --definition: rgb(var(--ctp-blue));
+  --string: rgb(var(--ctp-green));
+}
+
+html[data-theme="dark"] .cm-s-default .CodeMirror,
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
+  background-color: transparent;
+  color: var(--white) !important;
+  border: none;
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
+  color: var(--base);
+}
+
+html[data-theme="dark"] .CodeMirror-linenumber {
+  color: var(--bg4);
+}
+html[data-theme="dark"] .CodeMirror-cursor {
+  border-left: 1px solid var(--fg);
+}
+html[data-theme="dark"].cm-fat-cursor .CodeMirror-cursor {
+  background-color: var(--cursor) !important;
+}
+html[data-theme="dark"] .cm-animate-fat-cursor {
+  background-color: var(--cursor) !important;
+}
+html[data-theme="dark"] div.CodeMirror-selected {
+  background: var(--selection);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-line::-moz-selection,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line > span::-moz-selection,
+html[data-theme="dark"]
+  .cm-s-default
+  .CodeMirror-line
+  > span
+  > span::-moz-selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-line::-moz-selection,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line > span::-moz-selection,
+html[data-theme="dark"]
+  .cm-s-default
+  .CodeMirror-line
+  > span
+  > span::-moz-selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+html[data-theme="dark"] .CodeMirror span.cm-comment {
+  color: var(--comment);
+}
+
+html[data-theme="dark"] span.cm-meta {
+  color: var(--blue);
+}
+html[data-theme="dark"] span.cm-comment {
+  color: var(--gray);
+}
+html[data-theme="dark"] span.cm-number {
+  color: var(--number);
+}
+html[data-theme="dark"] span.cm-atom {
+  color: var(--atom);
+}
+html[data-theme="dark"] span.cm-keyword {
+  color: var(--keyword);
+}
+html[data-theme="dark"] span.cm-variable {
+  color: var(--fg);
+}
+html[data-theme="dark"] span.cm-variable-2 {
+  color: var(--fg);
+}
+html[data-theme="dark"] span.cm-variable-3,
+html[data-theme="dark"] .cm-s-gruvbox-dark span.cm-type {
+  color: var(--yellow);
+}
+html[data-theme="dark"] span.cm-operator {
+  color: var(--operator);
+}
+html[data-theme="dark"] span.cm-callee {
+  color: var(--fg);
+}
+html[data-theme="dark"] span.cm-def {
+  color: var(--definition);
+}
+html[data-theme="dark"] span.cm-property {
+  color: var(--fg);
+}
+html[data-theme="dark"] span.cm-string {
+  color: var(--string);
+}
+html[data-theme="dark"] span.cm-string-2 {
+  color: var(--aqua);
+}
+html[data-theme="dark"] span.cm-qualifier {
+  color: var(--aqua);
+}
+html[data-theme="dark"] span.cm-attribute {
+  color: var(--aqua);
+}
+html[data-theme="dark"] .CodeMirror-activeline-background {
+  background: var(--current-line);
+}
+html[data-theme="dark"] .CodeMirror-matchingbracket {
+  background: var(--gray);
+  color: var(--bg0) !important;
+}
+html[data-theme="dark"] span.cm-builtin {
+  color: var(--orange);
+}
+html[data-theme="dark"] span.cm-tag {
+  color: var(--orange);
+}
+html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
+  background: transparent;
+}
+
+
+Changes all icons to the same color */
+.ti {
+  color: var(--ls-icon-color);
+}
