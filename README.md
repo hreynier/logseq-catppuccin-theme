@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/template/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/template?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/template/issues"><img src="https://img.shields.io/github/issues/catppuccin/template?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/template/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/template?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/hreynier/logseq-catppuccino-theme/stargazers"><img src="https://img.shields.io/github/stars/hreynier/logseq-catppuccino-theme?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/hreynier/logseq-catppuccino-theme/issues"><img src="https://img.shields.io/github/issues/hreynier/logseq-catppuccino-theme?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/hreynier/logseq-catppuccino-theme/contributors"><img src="https://img.shields.io/github/contributors/hreynier/logseq-catppuccino-theme?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -16,8 +16,9 @@
 </p>
 
 ## Previews
+wip
 
-<details>
+<!-- <details>
 <summary>🌻 Latte</summary>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
 </details>
@@ -32,21 +33,15 @@
 <details>
 <summary>🌿 Mocha</summary>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
-</details>
+</details> -->
+
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+1. Clone this repository locally 
+2. or Copy the content's of `custom.css` into `/logseq/custom.css`
 
-## 🙋 FAQ (optional)
-
--	Q: **_"Where can I find the doc?"_**\
-	A: Run `:help theme`
-
-## 💝 Thanks to
+<!-- ## 💝 Thanks to
 
 - [Human](https://github.com/catppuccin)
 
@@ -63,3 +58,4 @@
 <p align="center">
 	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
 </p>
+ -->
